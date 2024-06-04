@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #66e6a8;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 60px);
+}
+
+.sidebar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar button {
+    height: 5rem;
+    background-color: #66e6a8;
+    color: black;
+    border: 1px solid #66e6a8;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sidebar button:hover {
+    background-color: #55d495;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.patient-card {
+    
+    width: calc(33.333% - 40px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.patient-card:hover {
+    background-color: #e0e0e0;
+}
+
+.patient-photo {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-image: url("foto_usuario.jpg");
+    background-size: 6rem 6.3rem ;
+}
+
+.patient-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
