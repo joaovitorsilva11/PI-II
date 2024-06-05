@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriLab</title>
-    <link rel="stylesheet" href="plano_alimentar.css">
+    <link rel="stylesheet" href="plano_alimentar_scomida.css">
 </head>
 <body>
 
@@ -19,34 +19,28 @@
     <nav>
         <button><a href="cliente.html">Gerenciar Clientes</a></button>
         <button><a href="dados_pac.html">Dados Pacientes</a></button>
-        <button><a href="PlanoAlimentar.html">Plano Alimentar</a></button>
+        <button ><a href="PlanoAlimentar.html" class="active">Plano Alimentar</a></button>
     </nav>
 
     <!-- Dados Paciente -->
     <main>
         <div class="Paciente">
-            <img src="foto_usuario.jpg" alt="Foto do Paciente">
-            <div>
-                <h2>Paciente X</h2>
-                <h3>22 Anos</h3>
-            </div>
+            <img src="foto_usuario.jpg" alt="">
+            <h2>Paciente X</h2>
+            <h3>22 anos</h3>
         </div>
 
         <div class="linha"></div>
 
         <div class="botaoPaciente">
-            <button><a href="add_refeicao.html">Nova Refeição</a></button>
-            <button><a href="ExportarPdf.html">Exportar Pdf</a></button>
+            <button><a href="add_refeicao.html">+ Nova refeição</a></button>
+            <button><a href="ExportarPdf.html">Exportar PDF</a></button>
         </div>
 
         <div class="InfoPaciente">
-            <h2>Café da manhã</h2>
-            <h2>08:00h</h2>
-
-            <p>100ml de água e tananan <br> ou <br> 200ml de leite e tananan</p>
-
-            <div class="grafico">
-                <img src="pizza.PNG" alt="Gráfico Pizza">
+            <div class="refeicao-placeholder">
+                <img src="imagem_frutas.jpg" alt="imagem frutas">
+                <h2>Nenhuma refeição adicionada</h2>
             </div>
         </div>
     </main>
@@ -54,3 +48,4 @@
 
 </body>
 </html>
+
