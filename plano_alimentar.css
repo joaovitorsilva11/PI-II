@@ -1,20 +1,23 @@
-/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8f5;
-    margin: 0;
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #8ad6a6;
-    padding: 10px 20px;
+    background-color: #66e6a8;
     color: white;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
 }
 
 .content {
@@ -23,36 +26,39 @@ header {
 }
 
 nav {
-    background-color: #e0f2e9;
-    width: 200px;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 nav button {
-    background-color: #66c17b;
-    border: none;
-    color: white;
+    height: 5rem;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
+    background-color: #66e6a8;
+    border: none;
     border-radius: 5px;
-    width: 100%;
+    color: black;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
+    padding-left: 20px;
 }
 
 nav button a {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
-    width: 100%;
 }
 
 nav button:hover {
-    background-color: #5dbf6f;
+    background-color: #55d495;
+}
+
+nav button a:hover {
+    color: white;
 }
 
 main {
@@ -67,11 +73,11 @@ main {
 }
 
 .Paciente img {
-    background-color: #d3d3d3;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
     margin-right: 20px;
+    background-color: #ddd;
 }
 
 .Paciente h2 {
@@ -80,7 +86,7 @@ main {
 }
 
 .Paciente h3 {
-    margin-left: 1rem;
+    margin: 0;
     color: #696969;
 }
 
@@ -96,9 +102,9 @@ main {
 }
 
 .botaoPaciente button {
-    background-color: #e0f2e9;
-    border: 2px solid #66c17b;
-    color: #66c17b;
+    background-color: #66e6a8;
+    border: none;
+    color: white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -107,12 +113,12 @@ main {
 }
 
 .botaoPaciente button a {
-    color: #66c17b;
+    color: white;
     text-decoration: none;
 }
 
 .botaoPaciente button:hover {
-    background-color: #d0e8d7;
+    background-color: #55d495;
 }
 
 .InfoPaciente {
