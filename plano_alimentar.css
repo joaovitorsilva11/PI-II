@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #8ad6a6;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    background-color: #e0f2e9;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+nav button {
+    background-color: #66c17b;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+nav button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+nav button:hover {
+    background-color: #5dbf6f;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.Paciente {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Paciente img {
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.Paciente h2 {
+    margin: 0;
+    color: #2f4f4f;
+}
+
+.Paciente h3 {
+    margin-left: 1rem;
+    color: #696969;
+}
+
+.linha {
+    border-bottom: 2px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.botaoPaciente {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.botaoPaciente button {
+    background-color: #e0f2e9;
+    border: 2px solid #66c17b;
+    color: #66c17b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.botaoPaciente button a {
+    color: #66c17b;
+    text-decoration: none;
+}
+
+.botaoPaciente button:hover {
+    background-color: #d0e8d7;
+}
+
+.InfoPaciente {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.InfoPaciente h2 {
+    color: #2f4f4f;
+}
+
+.InfoPaciente p {
+    color: #696969;
+}
+
+.grafico {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.grafico img {
+    width: 300px; /* Ajuste a largura do gráfico */
+    height: auto; /* Mantém a proporção da imagem */
+}

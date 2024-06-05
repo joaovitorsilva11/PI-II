@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriLab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f5;
+            color: #2f4f4f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #e0f2e9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Largura fixa para os formulários */
+            min-height: 500px; /* Altura mínima para os formulários */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #006400;
+        }
+        .form-section {
+            display: none;
+            width: 100%;
+        }
+        .form-section.active {
+            display: block;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"], input[type="time"], select, input[type="text-area"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #006400;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-button {
+            background-color: initial;
+            color: initial;
+        }
+        input[type="submit"], .toggle-button {
+            background-color: #008000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px;
+            width: 150px;
+        }
+        input[type="submit"].active, .toggle-button.active {
+            background-color: #006400;
+        }
+        input[type="submit"]:hover, .toggle-button:hover {
+            background-color: #006400;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adicionar Refeição</h1>
+        <div class="button-container">
+            <button class="toggle-button active" onclick="toggleForms('form1')">Nova refeição</button>
+            <button class="toggle-button" onclick="toggleForms('form2')">Nova opção</button>
+        </div>
+
+        <div id="form1" class="form-section active">
+            <form>
+                <label for="titulo1">Título:</label>
+                <input type="text" id="titulo1" name="titulo1" placeholder="Café da manhã"> <br><br>
+                <label for="time1">Horário</label>
+                <input type="time" id="time1" name="time1" placeholder="00:00:00"><br><br>
+
+                <!-- segunda parte formulario -->
+                <h2>Macro nutrientes estimados</h2>
+                <label for="number1">Carboidratos</label>
+                <input type="number" name="number1" id="number1" placeholder="∞">
+                <label for="number2">Proteínas</label>
+                <input type="number" name="number2" id="number2" placeholder="∞">
+                <label for="number3">Gorduras</label>
+                <input type="number" name="number3" id="number3" placeholder="∞">
+
+                <!-- Submit -->
+                <input type="submit" value="Adicionar refeição" class="form-button">
+            </form>
+        </div>
+
+        <div id="form2" class="form-section">
+            <form>
+                <h2>Selecione a Refeição</h2>
+                <select name="SelectRefeicao" id="SelectRefeicao">
+                    <option value="opt1">Café da manhã</option>
+                    <option value="opt2">Almoço</option>
+                    <option value="opt3">Lanche tarde</option>
+                    <option value="opt4">Jantar</option>
+                </select>
+                <h2>Imagem</h2>
+                <button>Adicionar Imagem</button>
+
+                <h2>Gorduras</h2>
+                <input type="text-area">
+
+                <!-- Submit -->
+                <input type="submit" value="Adicionar opção" class="form-button">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForms(formId) {
+            var forms = document.getElementsByClassName("form-section");
+            var buttons = document.getElementsByClassName("toggle-button");
+            
+            for (var i = 0; i < forms.length; i++) {
+                forms[i].classList.remove("active");
+            }
+
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+
+            if (formId) {
+                document.getElementById(formId).classList.add("active");
+                document.querySelector("[onclick='toggleForms(\"" + formId + "\")']").classList.add("active");
+            }
+        }
+    </script>
+</body>
+</html>
