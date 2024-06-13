@@ -48,6 +48,11 @@ header {
     background-color: #55d495;
 }
 
+.sidebar-button a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .main-content {
     width: 80%;
@@ -86,6 +91,11 @@ header {
     background-color: #77D9B2;
 }
 
+.add-data-button a {
+    text-decoration: none;
+    color: black;
+}
+
 .table-container {
     margin-bottom: 20px;
     width: 100%;
@@ -120,6 +130,11 @@ th, td {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.chart img {
+    
+}
+
 hr {
     margin-bottom: 1rem;
 }
+

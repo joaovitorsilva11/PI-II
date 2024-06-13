@@ -35,7 +35,7 @@ h1 {
 }
 
 hr {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 p {
@@ -90,7 +90,7 @@ button:hover {
 }
 
 .login-link {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .login-link a {
@@ -100,4 +100,9 @@ button:hover {
 
 .login-link a:hover {
     text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Dados do Paciente</title>
+    <link rel="stylesheet" href="dados_pac.css">
+</head>
+<body>
+
+<div class="container">
+
+    <form>
+        <fieldset>
+            <legend>Dados do paciente</legend>
+            <div class="form-group">
+                <label for="peso">Peso</label>
+                <div class="input-group">
+                    <input type="text" id="peso" name="peso">
+                    <span class="unit">kg</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura</label>
+                <div class="input-group">
+                    <input type="text" id="altura" name="altura">
+                    <span class="unit">cm</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="percentualGordura">Percentual de gordura</label>
+                <div class="input-group">
+                    <input type="text" id="percentualGordura" name="percentualGordura">
+                    <span class="unit">%</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="percentualMusculo">Percentual de músculo</label>
+                <div class="input-group">
+                    <input type="text" id="percentualMusculo" name="percentualMusculo">
+                    <span class="unit">%</span>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Laboratoriais</legend>
+            <div class="form-group">
+                <label for="hdl">Colesterol HDL</label>
+                <div class="input-group">
+                    <input type="text" id="hdl" name="hdl">
+                    <span class="unit">mg/dL</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ldl">Colesterol LDL</label>
+                <div class="input-group">
+                    <input type="text" id="ldl" name="ldl">
+                    <span class="unit">mg/dL</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="colesterolTotal">Colesterol total</label>
+                <div class="input-group">
+                    <input type="text" id="colesterolTotal" name="colesterolTotal">
+                    <span class="unit">mg/dL</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="trigliceridios">Triglicerídios</label>
+                <div class="input-group">
+                    <input type="text" id="trigliceridios" name="trigliceridios">
+                    <span class="unit">mg/dL</span>
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit"><a href="cliente.html">Registrar</a></button>
+    </form>
+</div>
+
+</body>
+</html>
