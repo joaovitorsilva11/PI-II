@@ -1,13 +1,13 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 header {
-    background-color: #66e6a8;
+    background-color: #27DB8F;
     color: white;
     padding: 20px;
     text-align: left;
@@ -29,9 +29,9 @@ header {
 
 .sidebar button {
     height: 5rem;
-    background-color: #66e6a8;
+    background-color: #27DB8F;
     color: black;
-    border: 1px solid #66e6a8;
+    border: 1px solid #27DB8F;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;

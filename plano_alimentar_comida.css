@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #66e6a8;
+    background-color: #27DB8F;
     color: white;
     padding: 20px;
     text-align: left;
@@ -38,7 +38,7 @@ nav button {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    background-color: #66e6a8;
+    background-color: #27DB8F;
     border: none;
     border-radius: 5px;
     color: black;

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 
 .left-section {
     width: 30%;
-    background-color: #66e6a8;
+    background-color: #27DB8F;
 }
 
 .right-section {
@@ -79,7 +79,7 @@ button {
     padding: 10px;
     font-size: 16px;
     color: white;
-    background-color: #66e6a8;
+    background-color: #27DB8F;
     border: none;
     border-radius: 5px;
     cursor: pointer;
