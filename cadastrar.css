@@ -19,6 +19,11 @@ body {
     background-color: #27DB8F;
 }
 
+.left-section img {
+    height: 100%;
+    width: 100%;
+}
+
 .right-section {
     width: 70%;
     background-color: white;

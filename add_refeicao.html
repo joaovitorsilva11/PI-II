@@ -6,11 +6,10 @@
     <title>DietAtiva</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             background-color: #f7f7f7;
             color: #2f4f4f;
             display: flex;
-            justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -25,6 +24,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         h1 {
             color: #006400;
@@ -75,9 +76,31 @@
             gap: 10px;
             margin-top: 20px;
         }
+        #voltar {
+            width: 3rem;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #ffffff;
+            cursor: pointer;
+            margin-left: 5px;
+            margin-top: 5px;
+            font-weight: bold;
+            justify-content: left;
+            align-items: left;
+            }
+
+        #voltar:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
+    <div>
+        <a href="plano_alimentar_comida.html"><button id="voltar">←</button></a>
+    </div>
     <div class="container">
         <h1>Adicionar Refeição</h1>
         <div class="button-container">
