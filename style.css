@@ -1,57 +1,55 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #f0f0f0;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh; /* Garante que a tela ocupe 100% da altura */
 }
 
 .left-section {
-    width: 30%;
-    height: 90%;
+    flex: 1;
+    min-width: 300px; /* Garante que a seção esquerda não fique muito pequena */
     background-color: #27DB8F;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .left-section img {
     max-width: 100%;
     height: auto;
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da tela */
 }
 
 .right-section {
-    width: 70%;
+    flex: 2;
     background-color: white;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centraliza o conteúdo */
-    height: 100%;
+    height: 88%;
+    
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin: 0;
     font-size: 24px;
     color: #333;
 }
 
 p {
-    margin-bottom: 10px;
+    margin: 10px 0;
     color: #666;
 }
 
@@ -63,8 +61,8 @@ hr {
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 400px; /* Limita o tamanho máximo do form */
+    width: 80%;
+    max-width: 70rem; /* Limita o tamanho máximo do form */
 }
 
 label {
@@ -80,8 +78,10 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+    margin-left: 0;
     width: 100%; /* Expande o input para ocupar toda a largura disponível */
 }
+
 
 button {
     padding: 10px;
@@ -91,7 +91,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
 }
 
 button:hover {
@@ -111,15 +111,24 @@ button:hover {
     text-decoration: underline;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         height: auto;
     }
     
-    .left-section, .right-section {
+    .left-section {
         width: 100%;
         height: auto;
+    }
+    
+    .right-section {
+        width: 50%;
     }
 
     .left-section img {
