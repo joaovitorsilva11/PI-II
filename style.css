@@ -1,27 +1,31 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f0f0f0;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Garante que a tela ocupe 100% da altura */
 }
 
 .left-section {
-    width: 100%;
+    width: 30%;
+    height: 90%;
+    background-color: #27DB8F;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #27DB8F;
-    padding: 20px;
 }
 
 .left-section img {
@@ -30,35 +34,37 @@ body {
 }
 
 .right-section {
-    width: 100%;
+    width: 70%;
     background-color: white;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Centraliza o conteúdo */
+    height: 100%;
 }
 
 h1 {
-    margin: 0;
+    margin-bottom: 10px;
     font-size: 24px;
     color: #333;
 }
 
 p {
-    margin: 10px 0;
+    margin-bottom: 10px;
     color: #666;
 }
 
 hr {
-    margin-bottom: 9rem;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; /* Limita o tamanho máximo do form */
 }
 
 label {
@@ -73,14 +79,11 @@ input {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 2rem;
-    height: 2rem;
+    margin-bottom: 20px;
+    width: 100%; /* Expande o input para ocupar toda a largura disponível */
 }
 
 button {
-    width: 100%;
-    max-width: 10rem;
-    margin-top: 20px;
     padding: 10px;
     font-size: 16px;
     color: white;
@@ -88,6 +91,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
@@ -95,7 +99,7 @@ button:hover {
 }
 
 .register-link {
-    margin-top: 7rem;
+    margin-top: 20px;
 }
 
 .register-link a {
@@ -107,24 +111,27 @@ button:hover {
     text-decoration: underline;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .container {
-        flex-direction: row;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .left-section, .right-section {
+        width: 100%;
+        height: auto;
     }
 
-    .left-section {
-        width: 30%;
-        height: 100vh; /* Mantém a altura completa da tela */
-        padding: 0;
+    .left-section img {
+        max-height: 50vh;
     }
 
     .right-section {
-        width: 70%;
+        padding: 20px;
+        width: 100%;
+    }
+
+    input, button {
+        max-width: 100%; /* Inputs e botão ocupam toda a largura disponível em telas pequenas */
     }
 }
